@@ -8,13 +8,17 @@ package MyfirstselfmadeprograminJava;
  * 
  * @author Doru
  */
+import java.util.Scanner;
 public class MyFirstSelfMadeProgramInJava {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Moonlight effect on gum boots!");//sau Efectul razelor de luna asupra cizmelor de guma - suna mai bine in limba romana fata de greaca veche :)
+    System.out.println("Enter your name: ");// Allows a person to enter his/her name 
+    Scanner scanner = new Scanner(System.in);
+    String name = scanner.nextLine();
+    System.out.println("Your name is " + name);//The program read the line of introduced characters 
     }
     
 }
