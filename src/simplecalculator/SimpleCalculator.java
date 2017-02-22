@@ -4,7 +4,7 @@
 package simplecalculator;
 
 /**
- *
+ * Simple Calculator
  * @author Doru
  */
 import java.util.Scanner;
