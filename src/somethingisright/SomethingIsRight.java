@@ -7,6 +7,7 @@ import java.awt.Rectangle;//Import java.awt.Rectangle;
 
 /**
  * Something is right
+ *
  * @author Doru
  */
 public class SomethingIsRight {
@@ -18,8 +19,8 @@ public class SomethingIsRight {
         Rectangle myRect = new Rectangle();//Create the 'Rectangle' object;
         myRect.width = 40;
         myRect.height = 50;
-        int area = myRect.width*myRect.height;//Create the integer 'area';
+        int area = myRect.width * myRect.height;//Create the integer 'area';
         System.out.println("myRect's area is " + area);//Modifed the 'myRect.area()'in 'area';
     }
-    
+
 }

@@ -5,6 +5,7 @@ package simplecalculator;
 
 /**
  * Simple Calculator
+ *
  * @author Doru
  */
 import java.util.Scanner;
@@ -15,24 +16,24 @@ public class SimpleCalculator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+
         System.out.println("0");//calculator displays 0 value by default;
-        
+
         calculate();//run the method calculate;
     }
 
     // implemet the calculate method;
     public static void calculate() {
-        
+
         String operator;//declare a string variable named "operator";
         Scanner scan = new Scanner(System.in);//create a Scanner object named "scan";
-        
+
         Plus add = new Plus();//create an actor Plus;
         Equal equals = new Equal();  //create an actor Equal;
         Minus decrease = new Minus();//create an actor Minus;
         Multiply multiply = new Multiply();//create an actor Multiply;
         Divide divide = new Divide();//create an actor Divide;
-        
+
         double oper1;
         oper1 = readParam1(scan);//read first parameter;
         operator = readOper(scan);//read operator;
@@ -72,7 +73,6 @@ public class SimpleCalculator {
      *
      * @param s
      */
-
     public static void closeCalculator(String s) {
         if (s.matches(".*[a-z].*")) {
             System.out.println("Invalid action!You can use only numbers.Take it from the beginning.");
@@ -86,7 +86,6 @@ public class SimpleCalculator {
      * @param scan
      * @return
      */
-
     public static double readParam1(Scanner scan) {
         System.out.println("Enter first parameter:");
         String s = scan.next();
