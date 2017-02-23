@@ -5,11 +5,11 @@ package calculations;
 
 /**
  * Calculator
+ *
  * @author Doru
  */
-
 public class Calculation extends javax.swing.JFrame {
-   
+
     double firstnum;//declare double variable as first number;
     double secondnum;//declare double variable as second number;
     double result;//declare double variable as result of the operations;
@@ -324,126 +324,125 @@ public class Calculation extends javax.swing.JFrame {
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
         String takein;//declare String variable takein;
-        takein=txtDisplay.getText() + btn2.getText();//takein will display the text from the button design;
+        takein = txtDisplay.getText() + btn2.getText();//takein will display the text from the button design;
         txtDisplay.setText(takein);
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-       String takein;
-        takein=txtDisplay.getText() + btn4.getText();
+        String takein;
+        takein = txtDisplay.getText() + btn4.getText();
         txtDisplay.setText(takein);
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
         String takein;
-        takein=txtDisplay.getText() + btn6.getText();
+        takein = txtDisplay.getText() + btn6.getText();
         txtDisplay.setText(takein);
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
         String takein;
-        takein=txtDisplay.getText() + btn8.getText();
+        takein = txtDisplay.getText() + btn8.getText();
         txtDisplay.setText(takein);
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
         String takein;
-        takein=txtDisplay.getText() + btn0.getText();
+        takein = txtDisplay.getText() + btn0.getText();
         txtDisplay.setText(takein);
     }//GEN-LAST:event_btn0ActionPerformed
 
     private void btnSubActionPerformedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformedActionPerformed
-        firstnum=Double.parseDouble(txtDisplay.getText());
+        firstnum = Double.parseDouble(txtDisplay.getText());
         txtDisplay.setText("");
-        operation="-";
+        operation = "-";
     }//GEN-LAST:event_btnSubActionPerformedActionPerformed
 
     private void btnMultActionPerformedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultActionPerformedActionPerformed
-        firstnum=Double.parseDouble(txtDisplay.getText());
+        firstnum = Double.parseDouble(txtDisplay.getText());
         txtDisplay.setText("");
-        operation="*";
+        operation = "*";
     }//GEN-LAST:event_btnMultActionPerformedActionPerformed
 
     private void btnDivActionPerformedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivActionPerformedActionPerformed
-        firstnum=Double.parseDouble(txtDisplay.getText());
+        firstnum = Double.parseDouble(txtDisplay.getText());
         txtDisplay.setText("");
-        operation="/";
+        operation = "/";
     }//GEN-LAST:event_btnDivActionPerformedActionPerformed
 
     private void btnDotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDotActionPerformed
         String takein;
-        takein=txtDisplay.getText() + btnDot.getText();
+        takein = txtDisplay.getText() + btnDot.getText();
         txtDisplay.setText(takein);
     }//GEN-LAST:event_btnDotActionPerformed
 
     private void btnOperaActionPerformedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOperaActionPerformedActionPerformed
-        double Operan=(Double.parseDouble(String.valueOf(txtDisplay.getText())));
-        Operan=Operan * (-1);
+        double Operan = (Double.parseDouble(String.valueOf(txtDisplay.getText())));
+        Operan = Operan * (-1);
         txtDisplay.setText(String.valueOf(Operan));
     }//GEN-LAST:event_btnOperaActionPerformedActionPerformed
 
     private void btnAddActionPerformedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformedActionPerformed
-        firstnum=Double.parseDouble(txtDisplay.getText());
+        firstnum = Double.parseDouble(txtDisplay.getText());
         txtDisplay.setText("");
-        operation="+";
+        operation = "+";
     }//GEN-LAST:event_btnAddActionPerformedActionPerformed
 
     private void btnEqualsActionPerformedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqualsActionPerformedActionPerformed
         String answer;
-        secondnum=Double.parseDouble(txtDisplay.getText());
-        switch (operation)
-     {
-        case "+":
-        result= firstnum + secondnum;
-        answer =String.format("%.0f",result);
-        txtDisplay.setText(answer);
-        break;
-        case "-":
-        result= firstnum - secondnum;
-        answer =String.format("%.0f",result);
-        txtDisplay.setText(answer);
-        break;
-        case "*":
-        result= firstnum * secondnum;
-        answer =String.format("%.0f",result);
-        txtDisplay.setText(answer);
-        break;
-        case "/":
-        result= firstnum / secondnum;
-        answer =String.format("%.0f",result);
-        txtDisplay.setText(answer);
-        break;
+        secondnum = Double.parseDouble(txtDisplay.getText());
+        switch (operation) {
+            case "+":
+                result = firstnum + secondnum;
+                answer = String.format("%.0f", result);
+                txtDisplay.setText(answer);
+                break;
+            case "-":
+                result = firstnum - secondnum;
+                answer = String.format("%.0f", result);
+                txtDisplay.setText(answer);
+                break;
+            case "*":
+                result = firstnum * secondnum;
+                answer = String.format("%.0f", result);
+                txtDisplay.setText(answer);
+                break;
+            case "/":
+                result = firstnum / secondnum;
+                answer = String.format("%.0f", result);
+                txtDisplay.setText(answer);
+                break;
         }
     }//GEN-LAST:event_btnEqualsActionPerformedActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         String takein;
-        takein=txtDisplay.getText() + btn1.getText();
+        takein = txtDisplay.getText() + btn1.getText();
         txtDisplay.setText(takein);
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
         String takein;
-        takein=txtDisplay.getText() + btn3.getText();
+        takein = txtDisplay.getText() + btn3.getText();
         txtDisplay.setText(takein);
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
         String takein;
-        takein=txtDisplay.getText() + btn5.getText();
-        txtDisplay.setText(takein);       
+        takein = txtDisplay.getText() + btn5.getText();
+        txtDisplay.setText(takein);
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
         String takein;
-        takein=txtDisplay.getText() + btn7.getText();
+        takein = txtDisplay.getText() + btn7.getText();
         txtDisplay.setText(takein);
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
         String takein;
-        takein=txtDisplay.getText() + btn9.getText();
-        txtDisplay.setText(takein);         
+        takein = txtDisplay.getText() + btn9.getText();
+        txtDisplay.setText(takein);
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btnClearActionPerformedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformedActionPerformed
@@ -451,7 +450,7 @@ public class Calculation extends javax.swing.JFrame {
     }//GEN-LAST:event_btnClearActionPerformedActionPerformed
 
     private void txtDisplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDisplayActionPerformed
-        
+
     }//GEN-LAST:event_txtDisplayActionPerformed
 
     /**
