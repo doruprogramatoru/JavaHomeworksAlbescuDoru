@@ -1,5 +1,5 @@
 /*
- * For the class FilesManagement.java without main, I create JUnit based unitary tests using TDD.
+ * For the class FilesManagement.java without main, I create JUnit based unitary tests.
  */
 package Exception;
 
@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * JUnit based unitary tests using TDD
+ * JUnit based unitary test
  *
  * @author Doru
  */
