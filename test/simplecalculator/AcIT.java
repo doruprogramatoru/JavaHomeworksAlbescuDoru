@@ -4,7 +4,6 @@
 package simplecalculator;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * JUnit based unitary test
@@ -24,8 +23,6 @@ public class AcIT {
         System.out.println("allclear");
         String s = "";
         Ac.allclear(s);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
 }

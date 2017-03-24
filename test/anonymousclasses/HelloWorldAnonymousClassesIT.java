@@ -5,7 +5,6 @@ package anonymousclasses;
 
 import static anonymousclasses.HelloWorldAnonymousClasses.Languages.ENGLISH;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * Java Unit Test
@@ -26,8 +25,6 @@ public class HelloWorldAnonymousClassesIT {
         HelloWorldAnonymousClasses.Languages language = ENGLISH;
         HelloWorldAnonymousClasses instance = new HelloWorldAnonymousClasses();
         instance.sayHello(language);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
     /**
@@ -38,8 +35,6 @@ public class HelloWorldAnonymousClassesIT {
         System.out.println("main");
         String[] args = null;
         HelloWorldAnonymousClasses.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
 }

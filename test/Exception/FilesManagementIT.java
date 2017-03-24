@@ -1,5 +1,5 @@
 /*
- * For the class FilesManagement.java without main, I create JUnit based unitary tests.
+ * For the class FilesManagement.java, without main, I create JUnit based unitary tests.
  */
 package Exception;
 
@@ -24,11 +24,9 @@ public class FilesManagementIT {
     public void testWriteStringFile() throws Exception {
         System.out.println("writeStringFile");
         String file = "C:\\Users\\Doru\\Documents\\JAVA\\7\\Star Wars.txt";
-        String content = "";
+        String content = "Use the Force, Luke! ";
         FilesManagement instance = new FilesManagement();
         instance.writeStringFile(file, content);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
     /**
@@ -39,11 +37,9 @@ public class FilesManagementIT {
         System.out.println("readStringFile");
         String file = "C:\\Users\\Doru\\Documents\\JAVA\\7\\Star Wars.txt";
         FilesManagement instance = new FilesManagement();
-        String expResult = "";
+        String expResult = "Use the Force, Luke! May the Force be with you!";
         String result = instance.readStringFile(file);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
     /**
@@ -53,11 +49,9 @@ public class FilesManagementIT {
     public void testAddStringToFile() throws Exception {
         System.out.println("addStringToFile");
         String file = "C:\\Users\\Doru\\Documents\\JAVA\\7\\Star Wars.txt";
-        String content = "";
+        String content = "May the Force be with you!";
         FilesManagement instance = new FilesManagement();
         instance.addStringToFile(file, content);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
     /**
@@ -69,8 +63,6 @@ public class FilesManagementIT {
         String file = "C:\\Users\\Doru\\Documents\\JAVA\\7\\Star Wars.txt";
         FilesManagement instance = new FilesManagement();
         instance.deleteFileContent(file);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
 }

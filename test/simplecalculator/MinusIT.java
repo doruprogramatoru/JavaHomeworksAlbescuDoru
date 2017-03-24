@@ -22,13 +22,11 @@ public class MinusIT {
     @Test
     public void testDecrease() {
         System.out.println("decrease");
-        double parameter1 = 0.0;
-        double parameter2 = 0.0;
-        double expResult = 0.0;
+        double parameter1 = 10.0;
+        double parameter2 = 3.0;
+        double expResult = 7.0;
         double result = Minus.decrease(parameter1, parameter2);
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
 }

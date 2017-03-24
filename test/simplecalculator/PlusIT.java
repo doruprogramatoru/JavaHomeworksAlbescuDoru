@@ -22,13 +22,11 @@ public class PlusIT {
     @Test
     public void testAdd() {
         System.out.println("add");
-        double parameter1 = 0.0;
-        double parameter2 = 0.0;
-        double expResult = 0.0;
+        double parameter1 = 7.0;
+        double parameter2 = 9.0;
+        double expResult = 16.0;
         double result = Plus.add(parameter1, parameter2);
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
 }

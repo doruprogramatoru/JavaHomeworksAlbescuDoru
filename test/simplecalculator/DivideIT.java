@@ -3,7 +3,6 @@
  */
 package simplecalculator;
 
-import static java.lang.Double.NaN;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -23,13 +22,11 @@ public class DivideIT {
     @Test
     public void testDividing() {
         System.out.println("dividing");
-        double parameter1 = 0.0;
-        double parameter2 = 0.0;
-        double expResult = NaN;
+        double parameter1 = 14.0;
+        double parameter2 = 7.0;
+        double expResult = 2;
         double result = Divide.dividing(parameter1, parameter2);
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
 }

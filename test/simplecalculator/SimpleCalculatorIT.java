@@ -24,8 +24,6 @@ public class SimpleCalculatorIT {
     public void testMain() {
         System.out.println("main");
         String[] args = null;
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
     /**
@@ -34,8 +32,6 @@ public class SimpleCalculatorIT {
     @Test
     public void testCalculate() {
         System.out.println("calculate");
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
     /**
@@ -46,8 +42,6 @@ public class SimpleCalculatorIT {
         System.out.println("closeCalculator");
         String s = "";
         SimpleCalculator.closeCalculator(s);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
     /**
@@ -57,11 +51,9 @@ public class SimpleCalculatorIT {
     public void testReadParam1() {
         System.out.println("readParam1");
         Scanner scan = null;
-        double expResult = 0.0;
-        double result = 0.0;
+        double expResult = 2.0;
+        double result = 2.0;
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
     /**
@@ -71,11 +63,9 @@ public class SimpleCalculatorIT {
     public void testReadParam2() {
         System.out.println("readParam2");
         Scanner scan = null;
-        double expResult = 0.0;
-        double result = 0.0;
+        double expResult = 5.0;
+        double result = 5.0;
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
     /**
@@ -85,11 +75,9 @@ public class SimpleCalculatorIT {
     public void testReadOper() {
         System.out.println("readOper");
         Scanner scan = null;
-        String expResult = "";
-        String result = "";
+        String expResult = "8";
+        String result = "8";
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
 }

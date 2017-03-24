@@ -22,7 +22,7 @@ public class ExampleCircleArea {
         }
     }
 
-    static double circleArea(double radius) throws Exception {
+    public static double circleArea(double radius) throws Exception {
         if (radius < 0) {
             throw new Exception("radius should be positive");
         }

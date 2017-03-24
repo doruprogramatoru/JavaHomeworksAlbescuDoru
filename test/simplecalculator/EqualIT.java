@@ -24,8 +24,6 @@ public class EqualIT {
         double displayed = 0.0;
         Equal instance = new Equal();
         instance.getResult(displayed);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
 }

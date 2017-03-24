@@ -26,8 +26,6 @@ public class ExampleCircleAreaIT {
         String[] args;
         args = null;
         ExampleCircleArea.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
     /**
@@ -36,12 +34,10 @@ public class ExampleCircleAreaIT {
     @Test
     public void testCircleArea() throws Exception {
         System.out.println("circleArea");
-        double radius = 0.0;
-        double expResult = 0.0;
-        double result = 0.0;
+        double radius = 10.5;
+        double expResult = 346.36059005827474;
+        double result = ExampleCircleArea.circleArea(radius);
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        // fail("The test case is a prototype.");
     }
 
 }
